@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon2-32x32.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/edificha.css">
+    <title>Actualización Ficha EGD | CI HUMANA</title>
+</head>
+<body>
+    <!-- MENU -->
+    <div id="imn"></div>
+    <div class="col-s-6 col-m-4 col-l-2 nav">
+        <div class="rounded-circle col-s-8 col-m-8 col-l-8 foto"><img src="/img/logo.png" id="perfil" class="col-s-12 col-m-12 col-l-12"></div>
+        <div class="col-s-12 col-m-12 col-l-12 bien">
+            <label id="lbl1">BIENVENIDO</label><br>
+            <label id="lbl2">USUARIO</label>
+        </div>
+        <div class="col-s-12 col-m-12 col-l-12 boto">
+          <div class="col-s-12 col-m-12 col-l-12 boto2">
+                <a href="../ficharegis"><button type="button" class="btn btn-info bme">REGRESAR</button></a>
+          </div>
+          <!-- <div class="col-s-12 col-m-12 col-l-12 boto3">
+            <a href="#secp"><button type="button" class="btn btn-danger bme1">ALINEACIÓN DE OBJETIVOS</button></a>
+          </div>          -->
+        </div>
+        <div class="col-s-12 col-m-12 col-l-12 sa"><button type="button" class="btn btn-light bsa">Salir</button></div>
+    </div>
+    <!-- TERMINA MENÚ -->
+
+    <div class="col-s-12 col-m-12 col-l-10 menu">
+            <!-- TITULOS -->
+        <div class="col-s-12 col-m-12 col-l-12 titu">
+            <div class="col-s-12 col-m-2 col-l-3 log2">
+                <img src="/img/logo.png" id="logo">
+            </div>
+            <div class="col-s-12 col-m-10 col-l-9 titu2"><h1 id="th1">ACTUALIZACIÓN DE FICHA EGD</h1></div>
+        </div>
+        <!-- FIN TITULOS -->
+    <form action="/links/ficha2/{{usu.id}}" method="get">
+        <!-- NUEVA SECCIÓN -->
+        <div class="col-s-12 col-m-12 col-l-12 dat1">
+            <div class="col-s-12 col-m-6 col-l-6 dat11">
+                <label id="bo">Empleado: </label>
+                <label>{{usu.per_nombre}} {{usu.per_appat}} {{usu.per_apmat}}</label>
+            </div>
+            <div class="col-s-12 col-m-6 col-l-6 dat11">
+                <label id="bo">Periodo de desempeño: </label>
+                <label>{{usu.col_perido}}</label>
+            </div>
+            <div class="col-s-12 col-m-6 col-l-6 dat11">
+                <label id="bo">Dirección: </label>
+                <label>{{usu.col_direccion}}</label>
+            </div>
+            <div class="col-s-12 col-m-6 col-l-6 dat11">
+                <label id="bo">Subdirección: </label>
+                <label>{{usu.col_subdi}}</label>
+            </div>
+            <div class="col-s-12 col-m-6 col-l-6 dat11">
+                <label id="bo">Nombre del puesto: </label>
+                <label>{{usu.col_nomPuesto}}</label>
+            </div>
+            <div class="col-s-12 col-m-6 col-l-6 dat11">
+                <label id="bo">Antugüedad en el puesto: </label>
+                <label>{{usu.col_antiPuesto}}</label>
+            </div>
+            <div class="col-s-12 col-m-6 col-l-6 dat11">
+                <label id="bo">Gerencia: </label>
+                <label>{{usu.col_gerencia}}</label>
+            </div>
+            <div class="col-s-12 col-m-6 col-l-6 dat11">
+                <label id="bo">Antugüedad en la empresa: </label>
+                <label>{{usu.col_antiEmpre}}</label>
+            </div>
+        </div>
+        </form>
+        <form action="/links/editficha/{{usu.obc_id}}" method="POST">
+        <div class="col-s-12 col-m-12 col-l-12 dat2">
+            <div class="col-s-12 col-m-4 col-l-4 dat21">
+                <input  type="hidden"  name="obc_idCol" value="{{usu.obc_idCol}}" />
+                {{!-- <input type="hidden" name="obc_idCol" value="usu.obc_idCol"> --}}
+                <input type="hidden" value="usu.obc_id">
+                <input type="text" name="obc_evaluador" id="" class="dis" value="{{usu.obc_evaluador}}" placeholder="Evaluador:">
+            </div>
+            <div class="col-s-12 col-m-4 col-l-4 dat21">
+                <input type="text" name="obc_nomObj" id="" class="dis" value="{{usu.obc_nomObj}}" placeholder="Objetivo:">
+            </div>
+            <div class="col-s-12 col-m-4 col-l-4 dat21">
+                <input type="text" name="obc_evaPuesto" id="" class="dis" value="{{usu.obc_evaPuesto}}" placeholder="Puesto del Evaluador:">
+            </div>
+            <div class="col-s-12 col-m-4 col-l-4 dat21">
+                <input type="text" name="obc_pondera" id="" class="dis" value="{{usu.obc_pondera}}" placeholder="Ponderación:">
+            </div>
+            <div class="col-s-12 col-m-4 col-l-4 dat21">
+                <input type="text" name="obc_cumpli" id="" class="dis" value="{{usu.obc_cumpli}}" placeholder="Nivel de cumplimiento:">
+            </div>
+            <div class="col-s-12 col-m-4 col-l-4 dat21">
+                <input type="text" name="obc_ind1" id="" class="dis2" value="{{usu.obc_ind1}}" placeholder="Indicador 1:">
+                <input type="text" name="obc_ind2" id="" class="dis2" value="{{usu.obc_ind2}}" placeholder="Indicador 2:">
+            </div>
+        </div>
+        <div class="col-s-12 col-m-12 col-l-12 dat3">
+            <div class="col-s-12 col-m-4 col-l-4 dat31">
+                <div class="col-s-12 col-m-12 col-l-12 mt1">
+                    <label>Meta 1:</label>
+                </div>
+                <div class="col-s-12 col-m-12 col-l-12 mt1">
+                    <input type="text" name="obc_min1" id="" class="dis3" value="{{usu.obc_min1}}" placeholder="Mínimo:">
+                </div>
+                <div class="col-s-12 col-m-12 col-l-12 mt1">
+                    <input type="text" name="obc_satis1" id="" class="dis3" value="{{usu.obc_satis1}}" placeholder="Satisfactorio:">
+                </div>
+                <div class="col-s-12 col-m-12 col-l-12 mt1">
+                    <input type="text" name="obc_sobre1" id="" class="dis3" value="{{usu.obc_sobre1}}" placeholder="Sobresaliente:">
+                </div>
+            </div>
+            <div class="col-s-12 col-m-4 col-l-4 dat31">
+                <div class="col-s-12 col-m-12 col-l-12 mt1">
+                    <label>Meta 2:</label>
+                </div>
+                <div class="col-s-12 col-m-12 col-l-12 mt1">
+                    <input type="text" name="obc_min2" id="" class="dis3" value="{{usu.obc_min2}}" placeholder="Mínimo:">
+                </div>
+                <div class="col-s-12 col-m-12 col-l-12 mt1">
+                    <input type="text" name="obc_satis2" id="" class="dis3" value="{{usu.obc_satis2}}" placeholder="Satisfactorio:">
+                </div>
+                <div class="col-s-12 col-m-12 col-l-12 mt1">
+                    <input type="text" name="obc_sobre2" id="" class="dis3" value="{{usu.obc_sobre2}}" placeholder="Sobresaliente:">
+                </div>
+            </div>
+
+            <div class="col-s-12 col-m-4 col-l-4 dat31">
+                <div class="col-s-12 col-m-12 col-l-12 bt1">
+                    {{!-- <button type="button" class="btn btn-primary">Actualizar</button> --}}
+                    <input type="submit"  class="col-l-12 btn btn-primary bt11" value="Actualizar">
+                </div>
+            </div>
+
+        </div>
+        </form>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="/js/menu.js"></script>
+</body>
+</html>

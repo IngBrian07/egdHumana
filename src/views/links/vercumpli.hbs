@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon2-32x32.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/vercumpli.css">
+    <title>Detalles nivel de cumplimiento | CI HUMANA</title>
+</head>
+<body  onload="issecure()">
+    <!-- MENU -->
+    <div id="imn"></div>
+    <div class="col-s-6 col-m-4 col-l-2 nav">
+        <div class="rounded-circle col-s-8 col-m-8 col-l-8 foto"><img src="/img/logo.png" id="perfil" class="col-s-12 col-m-12 col-l-12"></div>
+        <div class="col-s-12 col-m-12 col-l-12 bien">
+            <label id="lbl1">BIENVENIDO</label><br>
+            <label id="lbl2"><p id="nombre"></p></label>
+        </div>
+        <div class="col-s-12 col-m-12 col-l-12 boto">
+          <!-- <div class="col-s-12 col-m-12 col-l-12 boto1">
+              <a href="index.html"><button type="button" class="btn btn-warning bme">MENÚ</button></a>
+          </div>
+          <div class="col-s-12 col-m-12 col-l-12 boto2">
+                <a href="fichaegd.html"><button type="button" class="btn btn-info bme">FICHA EGD</button></a>
+          </div> -->
+          <div class="col-s-12 col-m-12 col-l-12 boto3">
+            <a href="../cumpliregis"><button type="button" class="btn btn-danger bme1">REGRESAR</button></a>
+          </div>         
+        </div>
+    <div class="col-s-12 col-m-12 col-l-12 sa"><button type="button" onclick="logout()" class="btn btn-light bsa">Salir</button></div>
+    </div>
+    <!-- TERMINA MENÚ -->
+    <div class="col-s-12 col-m-12 col-l-10 menu">
+            <!-- TITULOS -->
+        <div class="col-s-12 col-m-12 col-l-12 titu">
+            <div class="col-s-12 col-m-2 col-l-3 log2">
+                <img src="/img/logo.png" id="logo">
+            </div>
+            <div class="col-s-12 col-m-10 col-l-9 titu2"><h1 id="th1">DETALLE DE NIVEL DE CUMPLIMIENTO</h1></div>
+        </div>
+        <!-- FIN TITULOS -->
+        
+        <div class="col-s-12 col-m-12 col-l-12 dat2">
+            <form action="/links/vercumpli/{{usu.cum_id}}" method="get"></form>
+        <form action="/links/actCumpli/{{usu.cum_id}}" method="POST"> 
+            <input type="hidden" name="cum_id" value="{{usu.cum_id}}" >
+            <div class="col-s-12 col-m-4 col-l-4 dat21">
+                <h2>Objetivo:</h2>
+                <input type="text" name="cum_objetivo" id="" class="dis" placeholder="Objetivo:" value="{{usu.cum_objetivo}}">
+            </div>
+            <div class="col-s-12 col-m-4 col-l-4 dat21">
+                <h2>Ponderación:</h2>
+                <input type="text" name="cum_pondera" id="" class="dis" placeholder="Ponderación:" value="{{usu.cum_pondera}}">
+            </div>
+            <div class="col-s-12 col-m-4 col-l-4 dat21">
+                <h2>Nivel de cumplimiento:</h2>
+                <input type="text" name="cum_nivel" id="" class="dis" placeholder="Nivel de cumplimiento:" value="{{usu.cum_nivel}}">
+            </div>
+            <div class="col-s-12 col-m-4 col-l-4 dat21">
+                <h2>Indicador 1:</h2>
+                <input type="text" name="cum_ind1" id="" class="dis" placeholder="Indicador 1:" value="{{usu.cum_ind1}}">
+            </div>
+            <div class="col-s-12 col-m-4 col-l-4 dat21">
+                <h2>Indicador 2:</h2>
+                <input type="text" name="cum_ind2" id="" class="dis" placeholder="Indicador 2:" value="{{usu.cum_ind2}}">
+            </div>
+        </div>
+        <div class="col-s-12 col-m-12 col-l-12 dat3">
+            <div class="col-s-12 col-m-4 col-l-4 dat31">
+                <div class="col-s-12 col-m-12 col-l-12 mt1">
+                    <label>Meta 1:</label>
+                </div>
+                <div class="col-s-12 col-m-12 col-l-12 mt1">
+                    <input type="text" name="cum_min1" id="" class="dis3" placeholder="Mínimo:" value="{{usu.cum_min1}}">
+                </div>
+                <div class="col-s-12 col-m-12 col-l-12 mt1">
+                    <input type="text" name="cum_sat1" id="" class="dis3" placeholder="Satisfactorio:" value="{{usu.cum_sat1}}">
+                </div>
+                <div class="col-s-12 col-m-12 col-l-12 mt1">
+                    <input type="text" name="cum_sobre1" id="" class="dis3" placeholder="Sobresaliente:" value="{{usu.cum_sobre1}}">
+                </div>
+            </div>
+            <div class="col-s-12 col-m-4 col-l-4 dat31">
+                <div class="col-s-12 col-m-12 col-l-12 mt1">
+                    <label>Meta 2:</label>
+                </div>
+                <div class="col-s-12 col-m-12 col-l-12 mt1">
+                    <input type="text" name="cum_min2" id="" class="dis3" placeholder="Mínimo:" value="{{usu.cum_min2}}">
+                </div>
+                <div class="col-s-12 col-m-12 col-l-12 mt1">
+                    <input type="text" name="cum_sat2" id="" class="dis3" placeholder="Satisfactorio:" value="{{usu.cum_sat2}}">
+                </div>
+                <div class="col-s-12 col-m-12 col-l-12 mt1">
+                    <input type="text" name="cum_sobre2" id="" class="dis3" placeholder="Sobresaliente:" value="{{usu.cum_sobre2}}">
+                </div>
+            </div>
+            <div class="col-s-12 col-m-4 col-l-4 dat31">
+                <div class="col-s-12 col-m-12 col-l-12 mt2">
+                    <label>Evidencia:</label><br>
+                    <input type="text" name="cum_evide" id="" value="{{usu.cum_evide}}" >
+                    <input type="hidden" name="cum_idCol" value="{{usu.cum_idCol}}" >
+                </div>
+            </div>
+        </div>
+            <div class="col-s-12 col-m-12 col-l-12 dat31">
+                <div class="col-s-12 col-m-12 col-l-6 bt1">
+                    <input type="submit" class="btn btn-primary" value="Actualizar"/>
+                </div>
+        </form>
+                <!-- <div class="col-s-12 col-m-6 col-l-6 bt1">
+                    <button type="button" class="btn btn-danger">BORRAR</button>
+                </div> -->
+            </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="/js/menu.js"></script>
+</body>
+</html>

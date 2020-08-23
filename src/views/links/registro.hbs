@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon2-32x32.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/regi.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <title>Sistema de registro || EGD HUMANA</title>
+</head>
+<body>
+    <div class="col-s-12 col-s-12 col-m-12 col-l-12 container">
+        <div class="col-s-11 col-m-8 col-l-6 log">
+            <form action="/links/registro/" method="POST">
+                <div class="col-s-12 col-m-12 col-l-12 dv1">
+                    <h1>SISTEMA DE REGISTRO EGD HUMANA</h1>
+                </div>
+                <div class="col-s-12 col-m-12 col-l-12 dv2">
+                    <div class="col-s-12 col-m-12 col-l-12 dv22">
+                        <input class="dis" name="nombre" type="text" placeholder="Ingresa tu nombre/usuario" class="" required>
+                    </div>
+                    <div class="col-s-12 col-m-12 col-l-12 dv22">
+                        <input class="dis" name="appat" type="text" placeholder="Ingresa tu apellido paterno" required>
+                    </div>
+                    <div class="col-s-12 col-m-12 col-l-12 dv22">
+                        <input class="dis" name="apmat" type="text" placeholder="Ingresa tu apellido materno" required>
+                    </div>
+                    <div class="col-s-12 col-m-12 col-l-12 dv22">
+                        <input class="dis" name="correo" type="email" placeholder="Ingresa tu correo" pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}" required>
+                    </div>
+                    <div class="col-s-12 col-m-12 col-l-12 dv22">
+                        <input class="dis" name="celular" type="tel" placeholder="Ingresa tu celular" required>
+                    </div>
+                    <div class="col-s-12 col-m-12 col-l-12 dv22">
+                        <input class="dis" id="pass" name="contrasena" type="password" placeholder="Ingresa tu nueva contraseña" required><br>
+                        <span id="passstrength"></span>
+                    </div>
+                </div>
+                <div class="col-s-12 col-m-12 col-l-12 dv3">
+                    <div class="col-s-12 col-m-12 col-l-12 dv31">
+                        <input class="b1" type="submit" value="ENVIAR">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="https://npmcdn.com/js-alert/dist/jsalert.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="/js/forte.js"></script>
+</body>
+</html>

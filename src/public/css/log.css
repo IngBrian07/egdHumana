@@ -1,0 +1,462 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+/* Móvil */
+
+    .col-s-1 {
+        width: 8.33% !important;
+    }
+
+    .col-s-2 {
+        width: 16.66% !important;
+    }
+
+    .col-s-3 {
+        width: 25% !important;
+    }
+
+    .col-s-4 {
+        width: 33.33% !important;
+    }
+
+    .col-s-5 {
+        width: 41.66% !important;
+    }
+
+    .col-s-6 {
+        width: 50% !important;
+    }
+
+    .col-s-7 {
+        width: 58.33% !important;
+    }
+
+    .col-s-8 {
+        width: 66.66% !important;
+    }
+
+    .col-s-9 {
+        width: 74.99% !important;
+    }
+
+    .col-s-10 {
+        width: 83.32% !important;
+    }
+
+    .col-s-11 {
+        width: 91.65% !important;
+    }
+
+    .col-s-12 {
+        width: 100% !important;
+    }
+    .container{
+        float: left;
+        height: 100vh;
+        background: url(/img/vector2.png) no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .log{
+        display: block;
+        margin: auto;
+        text-align: center;
+        float: left;
+        background-color: white;
+        height: auto;
+        /* padding: 2%; */
+        border-width: 10px;
+        border-style: solid;
+        border-color: #00549B;
+        border-radius: 45px;
+    }
+    .dv1{
+        margin-top: 5vh;
+        /* background-color: darkgrey; */
+        height: 10vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 15vh;
+        padding-right: 15vh;
+        color: #00549B;
+        margin-bottom: 5vh;
+        font-size: .8em;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    }
+    .dv2{
+        /* background-color: darksalmon; */
+        height: 20vh;
+    }
+        .dv21{
+            float: left;
+            /* background-color: fuchsia; */
+            height: 10vh;
+        }
+
+        .dv22{
+            float: left;
+            /* background-color: aqua; */
+            height: 10vh;
+        }
+    .dv3{
+        /* background-color: firebrick; */
+        height: 20vh;
+    }
+        .dv31{
+            float: left;
+            /* background-color: teal; */
+            height: 8vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+            .b1{
+                color: white;
+                float: left;
+                height: 6vh;
+                width: 50%;
+                border-style: none;
+                font-size: 1.2em;;
+                border-radius: 9vh;;
+                font-weight: bold;
+                background-color: #00549B;
+            }
+        .dv32{
+            float: left;
+            /* background-color: gold; */
+            height: 8vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5em;
+        }
+        .dv33{
+            float: left;
+            /* background-color: aquamarine; */
+            height: 4vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: .4em;
+        }
+            .dv32 a{
+                font-style: italic;
+                text-decoration: none;
+            }
+            .dv32 a,label:hover{
+                cursor: pointer;
+                font-weight: bold;
+            }
+        .dis{
+            margin-top: 2.5vh;
+            width: 60%;
+            height:5vh;
+            border-width: 2.5px;
+            border-style: solid;
+            border-color: #00549B;
+            border-radius: 10px;
+            font-size: 1.2em;
+            padding-left: 1vh;
+        }
+        span{
+            margin-bottom: 2.5vh;
+            font-weight: bold;
+            font-size: .8em;
+        }
+@media only screen and (min-width:720px) {
+    .col-m-1 {
+        width: 8.33% !important;
+    }
+    .col-m-2 {
+        width: 16.66% !important;
+    }
+    .col-m-3 {
+        width: 25% !important;
+    }
+    .col-m-4 {
+        width: 33.33% !important;
+    }
+    .col-m-5 {
+        width: 41.66% !important;
+    }
+    .col-m-6 {
+        width: 50% !important;
+    }
+    .col-m-7 {
+        width: 58.33% !important;
+    }
+    .col-m-8 {
+        width: 66.66% !important;
+    }
+    .col-m-9 {
+        width: 74.99% !important;
+    }
+    .col-m-10 {
+        width: 83.32% !important;
+    }
+    .col-m-11 {
+        width: 91.65% !important;
+    }
+    .col-m-12 {
+        width: 100% !important;
+    }
+    .container{
+        float: left;
+        height: 100vh;
+        background: url(/img/vector2.png) no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .log{
+        display: block;
+        margin: auto;
+        text-align: center;
+        float: left;
+        background-color: white;
+        height: auto;
+        padding: 2%;
+        border-width: 10px;
+        border-style: solid;
+        border-color: #00549B;
+        border-radius: 45px;
+    }
+    .dv1{
+        margin-top: 3.5vh;
+        /* background-color: darkgrey; */
+        height: 10vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 15vh;
+        padding-right: 15vh;
+        color: #00549B;
+        margin-bottom: 5vh;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    }
+    .dv2{
+        /* background-color: darksalmon; */
+        height: 20vh;
+    }
+        .dv21{
+            float: left;
+            /* background-color: fuchsia; */
+            height: 10vh;
+        }
+
+        .dv22{
+            float: left;
+            /* background-color: aqua; */
+            height: 10vh;
+        }
+    .dv3{
+        /* background-color: firebrick; */
+        height: 20vh;
+    }
+        .dv31{
+            float: left;
+            /* background-color: teal; */
+            height: 8vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+            .b1{
+                color: white;
+                float: left;
+                height: 6vh;
+                width: 50%;
+                border-style: none;
+                font-size: 1.5em;;
+                border-radius: 9vh;;
+                font-weight: bold;
+                background-color: #00549B;
+            }
+        .dv32{
+            float: left;
+            /* background-color: gold; */
+            height: 8vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5em;
+        }
+        .dv33{
+            float: left;
+            /* background-color: aquamarine; */
+            height: 4vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1em;
+        }
+        .dis{
+            margin-top: 2.5vh;
+            width: 60%;
+            height:5vh;
+            border-width: 2.5px;
+            border-style: solid;
+            border-color: #00549B;
+            border-radius: 10px;
+            font-size: 1.5em;
+            padding-left: 1vh;
+        }
+        span{
+            margin-bottom: 2.5vh;
+            font-weight: bold;
+            font-size: 1em;
+        }
+}
+@media only screen and (min-width:1024px) {
+    .col-l-1 {
+        width: 8.33% !important;
+    }
+    .col-l-2 {
+        width: 16.66% !important;
+    }
+    .col-l-3 {
+        width: 25% !important;
+    }
+    .col-l-4 {
+        width: 33.33% !important;
+    }
+    .col-l-5 {
+        width: 41.66% !important;
+    }
+    .col-l-6 {
+        width: 50% !important;
+    }
+    .col-l-7 {
+        width: 58.33% !important;
+    }
+    .col-l-8 {
+        width: 66.66% !important;
+    }
+    .col-l-9 {
+        width: 74.99% !important;
+    }
+    .col-l-10 {
+        width: 83.32% !important;
+    }
+    .col-l-11 {
+        width: 91.65% !important;
+    }
+    .col-l-12 {
+        width: 100% !important;
+    }
+    .container{
+        float: left;
+        height: 100vh;
+        background: url(/img/vector2.png) no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .log{
+        display: block;
+        margin: auto;
+        text-align: center;
+        float: left;
+        background-color: white;
+        height: auto;
+        padding: 2%;
+        border-width: 10px;
+        border-style: solid;
+        border-color: #00549B;
+        border-radius: 45px;
+    }
+    .dv1{
+        /* background-color: darkgrey; */
+        margin-top: 0;
+        height: 10vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 25vh;
+        padding-right: 25vh;
+        color: #00549B;
+        margin-bottom: 5vh;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    }
+    .dv2{
+        /* background-color: darksalmon; */
+        height: 20vh;
+    }
+        .dv21{
+            float: left;
+            /* background-color: fuchsia; */
+            height: 10vh;
+        }
+
+        .dv22{
+            float: left;
+            /* background-color: aqua; */
+            height: 10vh;
+        }
+    .dv3{
+        /* background-color: firebrick; */
+        height: 20vh;
+    }
+        .dv31{
+            float: left;
+            /* background-color: teal; */
+            height: 8vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+            .b1{
+                color: white;
+                float: left;
+                height: 6vh;
+                width: 50%;
+                border-style: none;
+                font-size: 1.5em;;
+                border-radius: 9vh;;
+                font-weight: bold;
+                background-color: #00549B;
+            }
+        .dv32{
+            float: left;
+            /* background-color: gold; */
+            height: 8vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5em;
+        }
+        .dv33{
+            float: left;
+            /* background-color: aquamarine; */
+            height: 4vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1em;
+        }
+        .dis{
+            margin-top: 2.5vh;
+            width: 60%;
+            height:5vh;
+            border-width: 2.5px;
+            border-style: solid;
+            border-color: #00549B;
+            border-radius: 10px;
+            font-size: 1.5em;
+            padding-left: 1vh;
+        }
+        span{
+            margin-bottom: 2.5vh;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+}

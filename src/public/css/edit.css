@@ -1,0 +1,749 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+/* Móvil */
+
+    .col-s-1 {
+        width: 8.33% !important;
+    }
+
+    .col-s-2 {
+        width: 16.66% !important;
+    }
+
+    .col-s-3 {
+        width: 25% !important;
+    }
+
+    .col-s-4 {
+        width: 33.33% !important;
+    }
+
+    .col-s-5 {
+        width: 41.66% !important;
+    }
+
+    .col-s-6 {
+        width: 50% !important;
+    }
+
+    .col-s-7 {
+        width: 58.33% !important;
+    }
+
+    .col-s-8 {
+        width: 66.66% !important;
+    }
+
+    .col-s-9 {
+        width: 74.99% !important;
+    }
+
+    .col-s-10 {
+        width: 83.32% !important;
+    }
+
+    .col-s-11 {
+        width: 91.65% !important;
+    }
+
+    .col-s-12 {
+        width: 100% !important;
+    }
+    /*INICIA MENU DESPLEGABLE*/
+    .nav{
+        float: left;
+        height: 100vh;
+        background-color: #234997;
+        text-align: center;
+        position: absolute;
+        left: -50%;
+        z-index: 10;
+        transition: all .3s;
+    }
+    .sm{
+        left: 0;
+    }
+    #imn{
+        cursor: pointer;
+        left:3.5vh;
+        /* top: 1vh; */
+        height: 60px;
+        width:60px;
+        z-index: 20;
+        position: absolute;
+        background: url(../img/baseline_menu_black_48dp.png);
+    }
+
+    .foto{
+        float: left;
+        height: 15vh;
+        /* background-color: tomato; */
+        margin: auto;
+        margin-top: 15vh;
+    }
+        #perfil{
+            margin: auto;
+            height: 16vh;
+            border-radius: 50%;
+        }
+    .bien{
+        float: left;
+        height: 15vh;
+        /* background-color: aqua; */
+    }
+        #lbl1{
+            color: white;
+            font-weight: bold;
+            margin-top: 5vh;
+        }
+        #lbl2{
+            color: white;
+            font-style: italic;
+        }
+    .boto{
+        float: left;
+        height: 40vh;
+        /* background-color: blue; */
+    }
+    .boto1{
+        float: left;
+        /* background-color: blanchedalmond; */
+        height: 12vh;
+        margin-top: 1vh;
+    }
+    .boto2{
+        float: left;
+        /* background-color: indigo; */
+        height: 12vh;
+        margin-top: 1vh;
+    }
+    .boto3{
+        float: left;
+        /* background-color: aqua; */
+        height: 12vh;
+        margin-top: 1vh;
+    }
+        .bme{
+            color: white;
+            border-style: none;
+            width: 15vh;
+            height: 5vh;
+            font-weight: bold;
+            border-radius: 8vh;
+            margin-top: 3.5vh;
+        }
+        .bme1{
+            color: white;
+            border-style: none;
+            width: 15vh;
+            height: 5vh;
+            font-weight: bold;
+            border-radius: 8vh;
+            margin-top: 3.5vh;
+            font-size: .8em;
+        }
+    .sa{
+        float: left;
+        height: 5vh;
+        /* background-color: violet; */
+        text-align: right;
+        /* margin-top: auto;*/
+        
+    }
+        .bsa{
+            font-style: italic;
+            border-style: none;
+            width: 10vh;
+            background-color: #87d8f3;
+            font-weight: bold;
+            margin-right: 2.5vh;
+            border-radius: 8vh;
+        }
+    /*FINALIZA MENU DESPLEGABLE*/
+    .menu{
+        float: left;
+        height: auo;
+        background-color: white;
+    }
+    .titu{
+        float: left;
+        height: auto;
+        /* background-color: navajowhite;   */
+    }
+        .log2{
+            /* background-color: lawngreen; */
+            float: left;
+            height: auto;
+            
+        }
+        .titu2{
+            /* background-color: hotpink; */
+            float: left;
+            height: auto;
+            text-align: center;
+        }
+            #th1{
+                margin-top: 2vh;
+                font-size: 2em;
+            }
+        #logo{
+            height: 5em;
+            display: block;
+            margin: auto;
+            float: right;
+            margin-right: 2.5vh;
+        }
+/* NUEVA SECCIÓN */
+.dat2{
+    margin-top: 5vh;
+    height: auto;
+    float: left;
+    /* background-color: firebrick; */
+    text-align: center;
+
+}
+    .dat21{
+        height: 15vh;
+        float: left;
+        /* background-color: forestgreen; */
+        margin-bottom: -5vh;
+    }
+    .dis{
+        /* margin-top: 5vh; */
+        width: 60%;
+        height:4vh;
+        border-width: 2.5px;
+        border-style: solid;
+        border-color: #00549B;
+        border-radius: 10px;
+        font-size: 1.1em;
+        padding-left: 1vh;
+    }
+    .dat31{
+        float: left;
+        /* background-color: yellow; */
+        height: auto;
+        text-align: center;
+    }
+    .bt1{
+        float: left;
+        /* background-color: mediumpurple; */
+        height: auto;
+        
+        padding-left: 15vh;
+    }
+        .bt1 button{
+            margin-top: 2.5vh;
+            margin-bottom: 2.5vh;
+            float: left;
+            height: 4vh;
+            width: 50%;
+            font-size: .8em;;
+            border-radius: 9vh;;
+            font-weight: bold;
+        }
+        .bt1 input{
+            float: left;
+            height: 4vh;
+            width: 50%;
+            font-size: .9em;;
+            border-radius: 9vh;;
+            font-weight: bold;
+            margin-top: 0vh;
+            margin-bottom: 0vh;
+        }
+.txt{
+    font-weight: bold;
+    font-size: 1.2em;
+    text-align: left;
+    margin-bottom: -2vh;
+}
+/* Para tablet */
+@media only screen and (min-width:720px) {
+    .col-m-1 {
+        width: 8.33% !important;
+    }
+    .col-m-2 {
+        width: 16.66% !important;
+    }
+    .col-m-3 {
+        width: 25% !important;
+    }
+    .col-m-4 {
+        width: 33.33% !important;
+    }
+    .col-m-5 {
+        width: 41.66% !important;
+    }
+    .col-m-6 {
+        width: 50% !important;
+    }
+    .col-m-7 {
+        width: 58.33% !important;
+    }
+    .col-m-8 {
+        width: 66.66% !important;
+    }
+    .col-m-9 {
+        width: 74.99% !important;
+    }
+    .col-m-10 {
+        width: 83.32% !important;
+    }
+    .col-m-11 {
+        width: 91.65% !important;
+    }
+    .col-m-12 {
+        width: 100% !important;
+    }
+    /*INICIA MENU DESPLEGABLE*/
+    .nav{
+        float: left;
+        height: 100vh;
+        background-color: #234997;
+        text-align: center;
+        position: absolute;
+        left: -50%;
+        z-index: 10;
+        transition: all .3s;
+    }
+    .sm{
+        left: 0;
+    }
+    #imn{
+        cursor: pointer;
+        left:3.5vh;
+        top: 4.5vh;
+        height: 60px;
+        width:60px;
+        z-index: 20;
+        position: absolute;
+        background: url(../img/baseline_menu_black_48dp.png);
+    }
+
+    .foto{
+        float: left;
+        height: 21vh;
+        /* background-color: tomato; */
+        margin: auto;
+        margin-top: 15vh;
+    }
+        #perfil{
+            margin: auto;
+            height: 22vh;
+            border-radius: 50%;
+        }
+    .bien{
+        float: left;
+        height: 15vh;
+        /* background-color: aqua; */
+    }
+        #lbl1{
+            color: white;
+            font-weight: bold;
+            margin-top: 5vh;
+        }
+        #lbl2{
+            color: white;
+            font-style: italic;
+        }
+    .boto{
+        float: left;
+        height: 40vh;
+        /* background-color: blue; */
+    }
+    .boto1{
+        float: left;
+        /* background-color: blanchedalmond; */
+        height: 12vh;
+        margin-top: 1vh;
+    }
+    .boto2{
+        float: left;
+        /* background-color: indigo; */
+        height: 12vh;
+        margin-top: 1vh;
+    }
+    .boto3{
+        float: left;
+        /* background-color: aqua; */
+        height: 12vh;
+        margin-top: 1vh;
+    }
+        .bme{
+            color: white;
+            border-style: none;
+            width: 15vh;
+            height: 5vh;
+            font-weight: bold;
+            border-radius: 8vh;
+            margin-top: 3.5vh;
+        }
+        .bme1{
+            color: white;
+            border-style: none;
+            width: 15vh;
+            height: 5vh;
+            font-weight: bold;
+            border-radius: 8vh;
+            margin-top: 3.5vh;
+            font-size: .8em;
+        }
+    .sa{
+        float: left;
+        height: 5vh;
+        /* background-color: violet; */
+        text-align: right;
+        /* margin-top: auto;*/
+        
+    }
+        .bsa{
+            font-style: italic;
+            border-style: none;
+            width: 10vh;
+            background-color: #87d8f3;
+            font-weight: bold;
+            margin-right: 2.5vh;
+            border-radius: 8vh;
+        }
+    /*FINALIZA MENU DESPLEGABLE*/
+    .menu{
+        float: left;
+        height: 100vh;
+        background-color: white;
+    }
+    .titu{
+        float: left;
+        height: 20vh;
+        /* background-color: navajowhite;   */
+    }
+        .log2{
+            /* background-color: lawngreen; */
+            float: right;
+            height: 20vh;         
+        }
+        .titu2{
+            /* background-color: hotpink; */
+            float: left;
+            height: 20vh;
+            text-align: center;
+        }
+            #th1{
+                margin-top: 6vh;
+                margin-left: 15vh;
+            }
+    .fo2{
+        float: left;
+        height: 45vh;
+        /* background-color: yellow; */
+    }
+        #logo{
+            height: 6em;
+            display: block;
+            margin: auto;
+            margin-top: 3.5vh;
+            margin-right: 3.5vh;
+        }
+
+/* NUEVA SECCIÓN */
+.dat2{
+    margin-top: -2vh;
+    height: auto;
+    float: left;
+    /* background-color: firebrick; */
+    text-align: center;
+
+}
+    .dat21{
+        height: 20vh;
+        float: left;
+        /* background-color: forestgreen; */
+        /* margin-bottom: -5vh; */
+    }
+    .dis{
+        margin-top: 5vh;
+        width: 60%;
+        height:4vh;
+        border-width: 2.5px;
+        border-style: solid;
+        border-color: #00549B;
+        border-radius: 10px;
+        font-size: 1.1em;
+        padding-left: 1vh;
+    }
+    .dat31{
+        float: left;
+        /* background-color: yellow; */
+        height: auto;
+        text-align: center;
+    }
+    .bt1{
+        float: left;
+        /* background-color: mediumpurple; */
+        height: auto;
+        padding-top: 10vh;
+        padding-left: 18vh;
+    }
+        .bt1 button{
+            float: left;
+            height: 6vh;
+            width: 50%;
+            font-size: 1.1em;;
+            border-radius: 9vh;
+            font-weight: bold;
+        }
+        .bt1 input{
+            float: left;
+            height: 6vh;
+            width: 50%;
+            font-size: 1.1em;;
+            border-radius: 9vh;;
+            font-weight: bold;
+            margin-top: 2vh;
+            margin-bottom: 0vh;
+        }
+        .txt{
+            font-weight: bold;
+            font-size: 1.2em;
+            text-align: left;
+            margin-bottom: -2vh;
+        }
+}
+@media only screen and (min-width:1024px) {
+    .col-l-1 {
+        width: 8.33% !important;
+    }
+    .col-l-2 {
+        width: 16.66% !important;
+    }
+    .col-l-3 {
+        width: 25% !important;
+    }
+    .col-l-4 {
+        width: 33.33% !important;
+    }
+    .col-l-5 {
+        width: 41.66% !important;
+    }
+    .col-l-6 {
+        width: 50% !important;
+    }
+    .col-l-7 {
+        width: 58.33% !important;
+    }
+    .col-l-8 {
+        width: 66.66% !important;
+    }
+    .col-l-9 {
+        width: 74.99% !important;
+    }
+    .col-l-10 {
+        width: 83.32% !important;
+    }
+    .col-l-11 {
+        width: 91.65% !important;
+    }
+    .col-l-12 {
+        width: 100% !important;
+    }
+    /*INICIA MENU DESPLEGABLE*/
+    .nav{
+        float: left;
+        height: 100vh;
+        background-color: #234997;
+        text-align: center;
+        position: static;
+    }
+
+    .foto{
+        float: left;
+        height: 21vh;
+        /* background-color: tomato; */
+        margin: auto;
+        margin-top: 15vh;
+    }
+        #perfil{
+            margin: auto;
+            height: 22vh;
+            border-radius: 50%;
+        }
+    .bien{
+        float: left;
+        height: 15vh;
+        /* background-color: aqua; */
+    }
+        #lbl1{
+            color: white;
+            font-weight: bold;
+            margin-top: 5vh;
+        }
+        #lbl2{
+            color: white;
+            font-style: italic;
+        }
+    .boto{
+        float: left;
+        height: 40vh;
+        /* background-color: blue; */
+    }
+    .boto1{
+        float: left;
+        /* background-color: blanchedalmond; */
+        height: 12vh;
+        margin-top: 1vh;
+    }
+    .boto2{
+        float: left;
+        /* background-color: indigo; */
+        height: 12vh;
+        margin-top: 1vh;
+    }
+    .boto3{
+        float: left;
+        /* background-color: aqua; */
+        height: 12vh;
+        margin-top: 1vh;
+    }
+        .bme{
+            color: white;
+            border-style: none;
+            width: 15vh;
+            height: 5vh;
+            font-weight: bold;
+            border-radius: 8vh;
+            margin-top: 3.5vh;
+        }
+        .bme1{
+            color: white;
+            border-style: none;
+            width: 15vh;
+            height: 5vh;
+            font-weight: bold;
+            border-radius: 8vh;
+            margin-top: 3.5vh;
+            font-size: .8em;
+        }
+
+    .sa{
+        float: left;
+        height: 5vh;
+        /* background-color: violet; */
+        text-align: right;
+        /* margin-top: auto;*/
+        
+    }
+        .bsa{
+            font-style: italic;
+            border-style: none;
+            width: 10vh;
+            background-color: #87d8f3;
+            font-weight: bold;
+            margin-right: 2.5vh;
+            border-radius: 8vh;
+        }
+        #imn{
+            display: none;
+        }
+    /*FINALIZA MENU DESPLEGABLE*/
+    .menu{
+        float: left;
+        height: 100vh;
+        background-color: white;
+    }
+    .titu{
+        float: left;
+        height: auto;
+        /* background-color: navajowhite;   */
+    }
+        .log2{
+            /* background-color: lawngreen; */
+            float: left;
+            height: 19vh;
+        }
+        .titu2{
+            /* background-color: hotpink; */
+            float: left;
+            height: 19vh;
+        }
+            #th1{
+                margin-top: 8vh;
+                text-align: left;
+            }
+        #logo{
+            height: 15vh;
+            display: block;
+            margin: auto;
+            margin-top: 2.5vh;
+        }
+        .dat2{
+            margin-top: 4vh; 
+            height: auto;
+            float: left;
+            /* background-color: firebrick; */
+            text-align: center;
+
+        }
+            .dat21{
+                height: 20vh;
+                float: left;
+                /* background-color: forestgreen; */
+                /* margin-bottom: -5vh; */
+                /* text-align: left; */
+            }
+            .dis{
+                margin-top: 2.5vh;
+                width: 50%;
+                height:5vh;
+                border-width: 2.5px;
+                border-style: solid;
+                border-color: #00549B;
+                border-radius: 10px;
+                font-size: 1.5em;
+                padding-left: 1vh;
+            }
+            .dat31{
+                /* margin-top: 10vh; */
+                float: left;
+                /* background-color: yellow; */
+                height: 15vh;
+                text-align: center;
+            }
+            .bt1{
+                float: left;
+                /* background-color: mediumpurple; */
+                height: auto;
+                /* padding-top: 10vh; */
+                padding-left: 25vh;
+            }
+                .bt1 button{
+                    float: left;
+                    height: 6vh;
+                    width: 50%;
+                    font-size: 1.5em;;
+                    border-radius: 9vh;;
+                    font-weight: bold;
+                    margin-top: 0vh;
+                    margin-bottom: 0vh;
+                }
+                .bt1 input{
+                    float: left;
+                    height: 6vh;
+                    width: 50%;
+                    font-size: 1.5em;;
+                    border-radius: 9vh;;
+                    font-weight: bold;
+                    margin-top: 0vh;
+                    margin-bottom: 0vh;
+                }
+        .txt{
+            font-weight: bold;
+            font-size: 1.2em;
+            text-align: left;
+            margin-bottom: -2vh;
+        }
+}
