@@ -4,7 +4,7 @@ function entrar(){
 
     $.ajax({
         type: "GET",
-        url: "http://localhost:5050/webservice/"+usuario,
+        url: "/webservice/"+usuario,
         success: function(data){
                 validar(data,usuario,pwd);
                 var vali = validar(data,usuario,pwd);
