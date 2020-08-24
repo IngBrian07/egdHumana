@@ -24,7 +24,7 @@ app.use(bodyParser.urlencoded({extended:false}));
 app.use(bodyParser.json());
 
 //routes
-app.use(require('./routes/index'));
+//app.use(require('./routes/index'));
 app.use('/links',require('./routes/links'));
 app.use('/webservice',require('./routes/webservice'));
 
