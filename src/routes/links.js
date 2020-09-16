@@ -15,7 +15,7 @@ router.post('/cumpli',async (req,res)=>{
     const {cum_objetivo, cum_pondera, cum_nivel, cum_ind1, cum_ind2, cum_min1, cum_sat1, cum_sobre1,  cum_min2, cum_sat2, cum_sobre2, cum_evide, cum_idCol}=req.body;
     const nuevoCumpli={cum_objetivo, cum_pondera, cum_nivel, cum_ind1, cum_ind2, cum_min1, cum_sat1, cum_sobre1,  cum_min2, cum_sat2, cum_sobre2, cum_evide, cum_idCol}
     await pool.query('insert into egd_objcolaborador set ?',[nuevoCumpli]);
-    res.redirect('links/cumpli');
+    res.redirect('/links/cumpli');
 });
 
 router.get('/cumplimenu',async(req,res)=>{
